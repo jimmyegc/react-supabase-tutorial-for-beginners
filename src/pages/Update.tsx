@@ -29,6 +29,7 @@ export const Update = () => {
       setFormError('Please fill in all the fields correctly.')
     }
     if (data) {
+      console.log(data)
       setFormError(null)
       navigate('/')
     }

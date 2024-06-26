@@ -30,7 +30,7 @@ export const Home = () => {
       if (data) {
         setFetchError(null)
         setSmoothies(data)
-        console.log(data)
+        // console.log(data)
       }
 
     }
@@ -47,7 +47,6 @@ export const Home = () => {
             <button onClick={() => setOrderBy('created_at')}>Time Created</button>
             <button onClick={() => setOrderBy('title')} >Title</button>
             <button onClick={() => setOrderBy('rating')}>Rating</button>
-            {orderBy}
           </div>
           <div className='smoothie-grid'>
             {smoothies?.map(smoothie => (
